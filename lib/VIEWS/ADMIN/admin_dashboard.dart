@@ -1,7 +1,7 @@
 // lib/views/admin_dashboard.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../models/user_model.dart';
+import 'package:naradaflow/MODELS/USER/user_model.dart';
 
 class AdminDashboard extends StatelessWidget {
   const AdminDashboard({super.key});
