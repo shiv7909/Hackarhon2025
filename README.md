@@ -38,13 +38,26 @@ This project is a cross-platform application built using the Flutter framework. 
      ```yaml
      dependencies:
        flutter:
-         sdk: flutter
-       cupertino_icons: ^1.0.6
-       get: ^4.7.2
-       flutter_svg: ^2.0.5
-       animated_text_kit: ^4.2.2
-       glassmorphism: ^3.0.0
-       google_fonts: ^5.1.0
+           cupertino_icons: ^1.0.6
+  get: ^4.7.2
+  flutter_svg: ^2.0.5
+  animated_text_kit: ^4.2.2
+  glassmorphism: ^3.0.0
+  google_fonts: ^5.1.0
+  fl_chart: ^0.68.0
+  auto_size_text: ^3.0.0
+  connectivity_plus: ^3.0.3
+  animate_do: ^4.2.0
+  timeline_tile: ^2.0.0
+  flutter_animate: ^4.2.0
+
+  firebase_remote_config: ^4.0.1
+  
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.5.2
+  firebase_storage: ^11.2.5
+  lottie: ^3.1.3
+  get_storage: ^2.1.1
      ```
    - Specify the path to the assets folder:
      ```yaml
@@ -63,7 +76,4 @@ This project is a cross-platform application built using the Flutter framework. 
 
 ### Screenshots
 
-
 ### Video
-
-[![Watch the video](assets/videos/thumbnail.png)](https://link_to_your_video.com)

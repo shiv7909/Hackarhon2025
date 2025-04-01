@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:naradaflow/Examine.dart/documentsview.dart';
 import 'package:naradaflow/VIEWS/ADMIN/admin_dashboard.dart';
 import 'package:naradaflow/VIEWS/User/pAGES/1_service.dart';
 import 'package:naradaflow/VIEWS/User/user_dashboard.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/user-dashboard', page: () => DashboardScreen()),
         GetPage(name: '/admin-dashboard', page: () => AdminDashboard()),
         GetPage(name: '/page1', page: () => UserProfileView()),
-        GetPage(name: '/page2', page: () => UserProfileView()),
+        GetPage(name: '/page2', page: () => DocumentApplicationView()),
         GetPage(name: '/page1', page: () => UserProfileView()),
         GetPage(name: '/page2', page: () => UserProfileView()),
         GetPage(name: '/page1', page: () => UserProfileView()),
