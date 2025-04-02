@@ -9,6 +9,7 @@ import 'package:naradaflow/VIEWS/User/pAGES/1_service.dart';
 import 'package:naradaflow/VIEWS/User/user_dashboard.dart';
 import 'package:naradaflow/VIEWS/home.dart';
 import 'package:naradaflow/VIEWS/User/signin/signin.dart';
+import 'package:naradaflow/eXAMINE/CLEARENCEvIEW.dart';
 
 void main() async {
 // Ensure widgets are initialized before Firebase init
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/admin-dashboard', page: () => AdminDashboard()),
         GetPage(name: '/page1', page: () => UserProfileView()),
         GetPage(name: '/page2', page: () => DocumentApplicationView()),
-        GetPage(name: '/page3', page: () => DocumentApplicationView()),
+        GetPage(name: '/page3', page: () => ClearanceCertificateView()),
         GetPage(name: '/page4', page: () => MessReductionView()),
         GetPage(name: '/page5', page: () => DocumentApplicationView()),
         GetPage(name: '/page6', page: () => LecturerInfoPage()),
