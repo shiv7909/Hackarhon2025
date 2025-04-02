@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:naradaflow/Responsiveness.dart';
 import 'package:naradaflow/VIEWS/Customappbar.dart';
 import 'package:naradaflow/VIEWS/User/services/SERVICES.dart';
-import 'package:naradaflow/constants.dart';
 import 'package:naradaflow/VIEWS/User/workorders/WorkOrderDetails.dart';
+import 'package:naradaflow/constants.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override
@@ -30,7 +30,7 @@ class DashboardScreen extends StatelessWidget {
                       children: [
                         const SERVICES(),
                         const SizedBox(height: defaultPadding),
-                        CurrentWorkOrders(),
+                        WorkOrdersView(),
                         if (Responsive.isMobile(context))
                           const SizedBox(height: defaultPadding),
                         // if (Responsive.isMobile(context))

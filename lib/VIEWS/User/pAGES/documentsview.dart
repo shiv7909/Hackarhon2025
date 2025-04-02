@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:naradaflow/Examine.dart/documentsController.dart';
+import 'package:naradaflow/CONTROLLERS/USER/2nd_service/documentsController.dart';
 
 class DocumentApplicationView extends StatelessWidget {
   final DocumentController controller = Get.put(DocumentController());

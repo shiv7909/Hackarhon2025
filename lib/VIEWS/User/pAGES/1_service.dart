@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:naradaflow/CONTROLLERS/1_service_controller.dart';
+import 'package:naradaflow/CONTROLLERS/USER/1st_service/1_service_controller.dart';
 import 'package:naradaflow/MODELS/USER/User_data_model.dart';
 
 class UserProfileView extends StatelessWidget {

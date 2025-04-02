@@ -3,7 +3,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:naradaflow/CONTROLLERS/login_controller.dart';
-import 'package:naradaflow/Examine.dart/documentsModel.dart';
+import 'package:naradaflow/MODELS/documentsModel.dart';
 
 class DocumentController extends GetxController {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -113,6 +113,7 @@ class DocumentController extends GetxController {
         documentName: selectedDocument.value,
         purpose: purpose.value,
         customDocumentName: customDocumentName.value,
+        studentId: loginController.loginId.value,
         // uploadedFileUrl: fileUrl,
       );
       String loginId = loginController.loginId.value;
@@ -145,8 +146,9 @@ class DocumentController extends GetxController {
             .collection('Documents')
             .doc('DOC_${loginId}_$timestamp')
             .collection('Status')
-            .doc('Admin1')
+            .doc('Admin')
             .set({
+          'studentId': '',
           'description': '',
           'name': '',
           'remark': '',
@@ -161,8 +163,9 @@ class DocumentController extends GetxController {
             .collection('Documents')
             .doc('DOC_${loginId}_$timestamp')
             .collection('Status')
-            .doc('Admin2')
+            .doc('HOD')
             .set({
+          'studentId': '',
           'description': '',
           'name': '',
           'remark': '',
@@ -207,7 +210,7 @@ class DocumentController extends GetxController {
           .collection('ADMINS')
           .doc('computer_science')
           .collection('admins')
-          .doc('ADMIN1')
+          .doc('Admin')
           .collection('Pending')
           .doc(
               'DOC_${loginId}_$timestamp') // Set the document ID to 'DOC_<LoginID>_<timestamp>'

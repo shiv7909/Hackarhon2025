@@ -8,9 +8,8 @@ class LoginController extends GetxController {
   final _storage = GetStorage();
 
   // Observable variables
-  final loginId = '24MCA00PY0020'.obs;
-
-  final password = '24MCA00PY0020'.obs;
+  final loginId = ''.obs;
+  final password = ''.obs;
   final error = ''.obs;
   final isLoggedIn = false.obs;
   final userType = ''.obs; // 'admin', 'user', etc.
@@ -23,19 +22,17 @@ class LoginController extends GetxController {
   }
 
   void login() {
-    if (loginId.value == '24MCA00PY0020' && password.value == 'SHIVA123') {
+    if (loginId.value == 'Admin' && password.value == '123') {
       // Admin login
       _saveSession(
         loginId: loginId.value,
         password: password.value,
-        userType: 'admin',
-        isAdmin: true,
+        userType: 'Admin',
       );
       Get.offNamed('/admin-dashboard',
           arguments: UserModel(
             username: loginId.value,
             password: password.value,
-            isAdmin: true,
           ));
     } else if (loginId.value == '24MCA00PY0020' &&
         password.value == '24MCA00PY0020') {
@@ -50,17 +47,16 @@ class LoginController extends GetxController {
             username: loginId.value,
             password: password.value,
           ));
-    } else if (loginId.value == 'user@example.com' &&
-        password.value == 'user123') {
-      // Another user login
+    } else if (loginId.value == 'HOD' && password.value == '123') {
+      // User login
       _saveSession(
         loginId: loginId.value,
         password: password.value,
-        userType: 'user',
+        userType: 'Admin',
       );
-      Get.offNamed('/user-dashboard',
+      Get.offNamed('/admin-dashboard',
           arguments: UserModel(
-            username: 'user',
+            username: loginId.value,
             password: password.value,
           ));
     } else {
@@ -99,20 +95,20 @@ class LoginController extends GetxController {
     }
   }
 
-  void logout() {
-    // Clear storage
-    _storage.remove('loginId');
-    _storage.remove('password');
-    _storage.remove('userType');
-    _storage.remove('isLoggedIn');
+  // void logout() {
+  //   // Clear storage
+  //   _storage.remove('loginId');
+  //   _storage.remove('password');
+  //   _storage.remove('userType');
+  //   _storage.remove('isLoggedIn');
 
-    // Reset observable variables
-    loginId.value = '';
-    password.value = '';
-    userType.value = '';
-    isLoggedIn.value = false;
+  //   // Reset observable variables
+  //   loginId.value = '';
+  //   password.value = '';
+  //   userType.value = '';
+  //   isLoggedIn.value = false;
 
-    // Navigate to login screen
-    Get.offAllNamed('/login');
-  }
+  //   // Navigate to login screen
+  //   Get.offAllNamed('/login');
+  // }
 }

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:naradaflow/CONTROLLERS/User_provoider.dart';
+import 'package:naradaflow/CONTROLLERS/USER/User_provoider.dart';
 import 'package:naradaflow/MODELS/USER/User_data_model.dart';
 
 class UserProfileController extends GetxController {

@@ -35,12 +35,14 @@ class DocumentApplicationModel {
   final String purpose;
   final String? customDocumentName;
   final String? uploadedFileUrl;
+  final String? studentId;
 
   DocumentApplicationModel({
     required this.documentName,
     required this.purpose,
     this.customDocumentName,
     this.uploadedFileUrl,
+    this.studentId,
   });
 
   Map<String, dynamic> toJson() {
@@ -49,6 +51,7 @@ class DocumentApplicationModel {
       'purpose': purpose,
       'customDocumentName': customDocumentName,
       'uploadedFileUrl': uploadedFileUrl,
+      'studentId': studentId,
     };
   }
 }

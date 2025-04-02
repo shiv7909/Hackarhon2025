@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:naradaflow/Examine.dart/documentsview.dart';
+import 'package:naradaflow/VIEWS/User/pAGES/documentsview.dart';
 import 'package:naradaflow/VIEWS/ADMIN/admin_dashboard.dart';
 import 'package:naradaflow/VIEWS/User/pAGES/1_service.dart';
 import 'package:naradaflow/VIEWS/User/user_dashboard.dart';
