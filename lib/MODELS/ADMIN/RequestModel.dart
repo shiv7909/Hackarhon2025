@@ -28,7 +28,7 @@ class RequestModel {
     return RequestModel(
       documentId: docId,
       customDocumentName: documentData['customDocumentName'],
-      documentName: documentData['documentName'] ?? 'Unnamed Document',
+      documentName: documentData['documentName'] ?? 'Mess Redution',
       purpose: documentData['purpose'] ?? 'No Purpose',
       uploadedFileUrl: documentData['uploadedFileUrl'],
       rejectionReason: documentData['rejectionReason'],

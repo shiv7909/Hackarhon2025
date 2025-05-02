@@ -60,6 +60,7 @@ class WorkOrderController extends GetxController {
 
         if (readyStatusData == null ||
             readyStatusData['status'] == null ||
+            readyStatusData['status'] != 'rejected' ||
             readyStatusData['status'].toString().isEmpty) {
           // Fetch all status steps
           QuerySnapshot statusSnapshot = await _firestore

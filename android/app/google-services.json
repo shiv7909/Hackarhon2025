@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236524199731",
+    "project_id": "naradaflow",
+    "storage_bucket": "naradaflow.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236524199731:android:f06bd93a33687e7a792846",
+        "android_client_info": {
+          "package_name": "com.example.naradaflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG2NjfN_di10eIlmyL9LAB8qEpqHBRjLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
