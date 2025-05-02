@@ -9,7 +9,7 @@ import 'package:naradaflow/VIEWS/User/pAGES/1_service.dart';
 import 'package:naradaflow/VIEWS/User/user_dashboard.dart';
 import 'package:naradaflow/VIEWS/home.dart';
 import 'package:naradaflow/VIEWS/User/signin/signin.dart';
-import 'package:naradaflow/eXAMINE/CLEARENCEvIEW.dart';
+import 'package:naradaflow/VIEWS/CLEARENCEvIEW.dart';
 
 void main() async {
 // Ensure widgets are initialized before Firebase init

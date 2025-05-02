@@ -1,0 +1,18 @@
+{
+  "name": "naradaflow",
+  "version": "1.0.0",
+  "description": "This project is a cross-platform application built using the Flutter framework. It supports web, Android, and iOS platforms. The application leverages various packages to enhance its functionality and user interface.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^11.5.0"
+  }
+}
